@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>super admin</title>
+	<link rel="stylesheet" type="text/css" href="superadmin.css">
+</head>
+<body>
+<div class="superadmin-main">
+	<button onclick="document.getElementById('approveadmin').style.display='block'">Approve admin</button>
+	<button onclick="document.getElementById('rejectadmin').style.display='block'">Reject admin</button>
+	<button onclick="document.getElementById('approvemanufacturer').style.display='block'">Approve Manufacturer</button>
+	<button onclick="document.getElementById('rejectmanufacturer').style.display='block'">reject manufacturer</button>
+	<button onclick="document.getElementById('approvesupplier').style.display='block'">Approve Supplier</button>
+	<button onclick="document.getElementById('rejectsupplier').style.display='block'">Reject supplier</button>
+
+
+	<div id="approveadmin" class="modal">
+	  
+	  <form class="modal-content animate" action="#">
+	    <div class="imgcontainer">
+	      <span onclick="document.getElementById('approveadmin').style.display='none'" class="close" title="Close Modal">&times;</span>
+	    </div>
+
+	    <div class="container">
+	      <label for="approveadmin"><b>Admin Address to approve</b></label>
+	      <input type="text" placeholder="Enter admin address" name="approveadmin" required>  
+	      <button type="submit">Approve Admin</button>
+	    </div>
+	    <div class="container" style="background-color:#f1f1f1">
+	      <button type="button" onclick="document.getElementById('approveadmin').style.display='none'" class="cancelbtn">Cancel</button>
+	    </div>
+	  </form>
+	</div>
+
+	<div id="rejectadmin" class="modal">
+	  
+	  <form class="modal-content animate" action="#">
+	    <div class="imgcontainer">
+	      <span onclick="document.getElementById('rejectadmin').style.display='none'" class="close" title="Close Modal">&times;</span>
+	    </div>
+
+	    <div class="container">
+	      <label for="approveadmin"><b>Admin Address to Reject</b></label>
+	      <input type="text" placeholder="Enter admin address" name="approveadmin" required>  
+	      <button type="submit">Reject Admin</button>
+	    </div>
+	    <div class="container" style="background-color:#f1f1f1">
+	      <button type="button" onclick="document.getElementById('rejectadmin').style.display='none'" class="cancelbtn">Cancel</button>
+	    </div>
+	  </form>
+	</div>
+
+	<div id="approvemanufacturer" class="modal">
+	  
+	  <form class="modal-content animate" action="#">
+	    <div class="imgcontainer">
+	      <span onclick="document.getElementById('approvemanufacturer').style.display='none'" class="close" title="Close Modal">&times;</span>
+	    </div>
+
+	    <div class="container">
+	      <label for="mfgid"><b> Manufacturer id</b></label>
+	      <input type="text" placeholder="Enter Manufacturer id" name="mfgid" required>  
+	      <button type="submit">Approve Manufacturer</button>
+	    </div>
+	    <div class="container" style="background-color:#f1f1f1">
+	      <button type="button" onclick="document.getElementById('approvemanufacturer').style.display='none'" class="cancelbtn">Cancel</button>
+	    </div>
+	  </form>
+	</div>
+
+	<div id="rejectmanufacturer" class="modal">
+	  
+	  <form class="modal-content animate" action="#">
+	    <div class="imgcontainer">
+	      <span onclick="document.getElementById('rejectmanufacturer').style.display='none'" class="close" title="Close Modal">&times;</span>
+	    </div>
+
+	    <div class="container">
+	      <label for="mfgid"><b> Manufacturer id</b></label>
+	      <input type="text" placeholder="Enter Manufacturer id" name="mfgid" required>  
+	      <button type="submit">Reject Manufacturer</button>
+	    </div>
+	    <div class="container" style="background-color:#f1f1f1">
+	      <button type="button" onclick="document.getElementById('rejectmanufacturer').style.display='none'" class="cancelbtn">Cancel</button>
+	    </div>
+	  </form>
+	</div>
+
+	<div id="approvesupplier" class="modal">
+	  
+	  <form class="modal-content animate" action="#">
+	    <div class="imgcontainer">
+	      <span onclick="document.getElementById('approvesupplier').style.display='none'" class="close" title="Close Modal">&times;</span>
+	    </div>
+
+	    <div class="container">
+	      <label for="supid"><b> supplier id</b></label>
+	      <input type="text" placeholder="Enter supplier id" name="mfgid" required>  
+	      <button type="submit">Approve Supplier</button>
+	    </div>
+	    <div class="container" style="background-color:#f1f1f1">
+	      <button type="button" onclick="document.getElementById('approvesupplier').style.display='none'" class="cancelbtn">Cancel</button>
+	    </div>
+	  </form>
+	</div>
+
+	<div id="rejectsupplier" class="modal">
+	  
+	  <form class="modal-content animate" action="#">
+	    <div class="imgcontainer">
+	      <span onclick="document.getElementById('rejectsupplier').style.display='none'" class="close" title="Close Modal">&times;</span>
+	    </div>
+
+	    <div class="container">
+	      <label for="supid"><b> supplier id</b></label>
+	      <input type="text" placeholder="Enter supplier id" name="supid" required>  
+	      <button type="submit">Approve Manufacturer</button>
+	    </div>
+	    <div class="container" style="background-color:#f1f1f1">
+	      <button type="button" onclick="document.getElementById('rejectsupplier').style.display='none'" class="cancelbtn">Cancel</button>
+	    </div>
+	  </form>
+	</div>
+</div>
+</body>
+</html>
+
